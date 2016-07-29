@@ -1,0 +1,10 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded">
+  <StackLayout>
+    <Label text="Our Posts" class="title"/>
+    <ListView height="100%" items="{{ postList }}">
+      <ListView.itemTemplate>
+        <Label class="post-title" text="{{ postName }}" textWrap="true" horizontalAlignment="left" />
+      </ListView.itemTemplate>
+    </ListView>
+  </StackLayout>
+</Page>
